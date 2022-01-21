@@ -16,6 +16,10 @@ public class SnakeAndLadder {
                 }
                 case 1: {
                     position = position + dice;   //ladder
+                    if (position > 100)
+                        position = position - dice;
+                    if (position == 100)
+                        System.out.println("Player Wins");
                     break;
                 }
                 default: {
